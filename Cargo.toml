@@ -2,6 +2,8 @@
 name = "guessing_game"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+description = "guessing game from tutorial: https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
