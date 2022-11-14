@@ -5,10 +5,10 @@ fn main() {
     let tries = 10;
     println!("Guess a number!! you have {tries} tries");
 
-    let secret_number = rand::thread_rng().gen_range(1..=100);
+    let answer = rand::thread_rng().gen_range(1..=100);
 
     if rand::random() {
-        println!("psst! -> {secret_number}");
+        println!("psst! -> {answer}");
     }
 
     let mut counter = 1;
@@ -34,7 +34,7 @@ fn main() {
         println!("You guessed: {guess}");
 
         let remaining = tries - counter;
-        match guess.cmp(&secret_number) {
+        match guess.cmp(&answer) {
             Ordering::Less => {
                 println!("Too small! {remaining} guesses left.");
                 counter += 1;
